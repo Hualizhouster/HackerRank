@@ -1,0 +1,18 @@
+# Transpose
+
+We can generate the transposition of an array using the tool numpy.transpose. 
+It will not affect the original array, but it will create a new array.
+
+Flatten
+
+The tool flatten creates a copy of the input array flattened to one dimension.
+
+
+code with python3:
+
+import numpy 
+
+n, m = map(int, input().split()) # define n rows and m columns
+array = numpy.array([input().strip().split() for _ in range(n)], int)
+print (array.transpose())
+print (array.flatten())
