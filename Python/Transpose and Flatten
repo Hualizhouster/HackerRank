@@ -12,7 +12,7 @@ code with python3:
 
 import numpy 
 
-n, m = map(int, input().split()) # define n rows and m columns
+n, m = map(int, input().split()) # define for reading more than one numbers one time
 array = numpy.array([input().strip().split() for _ in range(n)], int)
 print (array.transpose())
 print (array.flatten())
