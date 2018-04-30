@@ -1,0 +1,20 @@
+# zeros
+
+The zeros tool returns a new array with a given shape and type filled with 's.
+
+ones
+
+The ones tool returns a new array with a given shape and type filled with 's.
+Task
+
+You are given the shape of the array in the form of space-separated integers, each integer representing the size of different dimensions, your task is to print an array of the given shape and integer type using the tools numpy.zeros and numpy.ones.
+
+
+code with python3:
+
+import numpy
+
+my_array = list(map(int, input().split())) # define a list or tuple because map() function just reads seperate values.
+
+print(numpy.zeros(my_array, dtype = numpy.int))
+print(numpy.ones(my_array, dtype = numpy.int))
